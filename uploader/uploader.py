@@ -13,6 +13,9 @@ def s3upload(filename, url):
         file_contents = urllib2.urlopen(url)
         fp = cStringIO.StringIO(file_contents.read())
         k.set_contents_from_file(fp)
+        print "Success uploading %s" % filename
+    else:
+        print "%s already uploaded" % filename
         
 def list_keys():
     objects = bucket.list()
