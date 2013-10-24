@@ -1,0 +1,8 @@
+distribute==0.6.49
+lxml==3.2.3
+requests==2.0.1
+stevedore==0.10
+virtualenv==1.9.1
+virtualenv-clone==0.2.4
+virtualenvwrapper==4.0
+wsgiref==0.1.2
