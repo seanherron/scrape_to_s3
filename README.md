@@ -15,7 +15,7 @@ From your prompt, run ```python scrape_to_s3.py```. The script will ask you for 
 
 # License
 
-The license of the project is the 2-clause BSD license:
+The license of the project is the MIT license:
 
 ```
 The MIT License (MIT)
