@@ -8,6 +8,7 @@ bucket = conn.get_bucket('faers')
 
 def s3upload(filename, url):
     if bucket.get_key(filename) is None:
+        print "Started uploading %s" % filename
         k = Key(bucket)
         k.key = filename
         file_contents = urllib2.urlopen(url)
@@ -26,6 +27,3 @@ def list_keys():
         url = item.generate_url(0, query_auth=False, force_http=True)
         files[item.name] = url
     return files
-       
-        
-    
